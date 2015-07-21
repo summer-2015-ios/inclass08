@@ -15,6 +15,9 @@
 		3FE644EF1B5EEDA200B98F8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE644EE1B5EEDA200B98F8A /* Images.xcassets */; };
 		3FE644F21B5EEDA200B98F8A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FE644F01B5EEDA200B98F8A /* LaunchScreen.xib */; };
 		3FE644FE1B5EEDA200B98F8A /* InClass08Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE644FD1B5EEDA200B98F8A /* InClass08Tests.m */; };
+		3FE645091B5EEE0E00B98F8A /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE645081B5EEE0E00B98F8A /* Event.m */; };
+		3FE6450C1B5EEF5900B98F8A /* AddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6450B1B5EEF5900B98F8A /* AddEventViewController.m */; };
+		3FE6450F1B5EFE7F00B98F8A /* EventDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6450E1B5EFE7F00B98F8A /* EventDisplayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,12 @@
 		3FE644F71B5EEDA200B98F8A /* InClass08Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InClass08Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE644FC1B5EEDA200B98F8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FE644FD1B5EEDA200B98F8A /* InClass08Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InClass08Tests.m; sourceTree = "<group>"; };
+		3FE645071B5EEE0E00B98F8A /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		3FE645081B5EEE0E00B98F8A /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		3FE6450A1B5EEF5900B98F8A /* AddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventViewController.h; sourceTree = "<group>"; };
+		3FE6450B1B5EEF5900B98F8A /* AddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventViewController.m; sourceTree = "<group>"; };
+		3FE6450D1B5EFE7F00B98F8A /* EventDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDisplayViewController.h; sourceTree = "<group>"; };
+		3FE6450E1B5EFE7F00B98F8A /* EventDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDisplayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +94,18 @@
 			children = (
 				3FE644E21B5EEDA200B98F8A /* AppDelegate.h */,
 				3FE644E31B5EEDA200B98F8A /* AppDelegate.m */,
+				3FE645071B5EEE0E00B98F8A /* Event.h */,
+				3FE645081B5EEE0E00B98F8A /* Event.m */,
 				3FE644E81B5EEDA200B98F8A /* ViewController.h */,
 				3FE644E91B5EEDA200B98F8A /* ViewController.m */,
-				3FE644EB1B5EEDA200B98F8A /* Main.storyboard */,
+				3FE6450A1B5EEF5900B98F8A /* AddEventViewController.h */,
+				3FE6450B1B5EEF5900B98F8A /* AddEventViewController.m */,
 				3FE644EE1B5EEDA200B98F8A /* Images.xcassets */,
 				3FE644F01B5EEDA200B98F8A /* LaunchScreen.xib */,
 				3FE644E51B5EEDA200B98F8A /* InClass08.xcdatamodeld */,
+				3FE644EB1B5EEDA200B98F8A /* Main.storyboard */,
+				3FE6450D1B5EFE7F00B98F8A /* EventDisplayViewController.h */,
+				3FE6450E1B5EFE7F00B98F8A /* EventDisplayViewController.m */,
 				3FE644DE1B5EEDA200B98F8A /* Supporting Files */,
 			);
 			path = InClass08;
@@ -223,9 +238,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FE644E41B5EEDA200B98F8A /* AppDelegate.m in Sources */,
+				3FE6450F1B5EFE7F00B98F8A /* EventDisplayViewController.m in Sources */,
 				3FE644E11B5EEDA200B98F8A /* main.m in Sources */,
+				3FE645091B5EEE0E00B98F8A /* Event.m in Sources */,
 				3FE644EA1B5EEDA200B98F8A /* ViewController.m in Sources */,
 				3FE644E71B5EEDA200B98F8A /* InClass08.xcdatamodeld in Sources */,
+				3FE6450C1B5EEF5900B98F8A /* AddEventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
