@@ -100,12 +100,12 @@
 				3FE644E91B5EEDA200B98F8A /* ViewController.m */,
 				3FE6450A1B5EEF5900B98F8A /* AddEventViewController.h */,
 				3FE6450B1B5EEF5900B98F8A /* AddEventViewController.m */,
+				3FE6450D1B5EFE7F00B98F8A /* EventDisplayViewController.h */,
+				3FE6450E1B5EFE7F00B98F8A /* EventDisplayViewController.m */,
 				3FE644EE1B5EEDA200B98F8A /* Images.xcassets */,
 				3FE644F01B5EEDA200B98F8A /* LaunchScreen.xib */,
 				3FE644E51B5EEDA200B98F8A /* InClass08.xcdatamodeld */,
 				3FE644EB1B5EEDA200B98F8A /* Main.storyboard */,
-				3FE6450D1B5EFE7F00B98F8A /* EventDisplayViewController.h */,
-				3FE6450E1B5EFE7F00B98F8A /* EventDisplayViewController.m */,
 				3FE644DE1B5EEDA200B98F8A /* Supporting Files */,
 			);
 			path = InClass08;

@@ -34,9 +34,10 @@
     NSString* eLocation = self.eLocationTV.text;
     NSString* eDate = self.eDateTV.text;
     NSString* eDescr = self.eDescTV.text;
-    if([eName length] ==0 || [eLocation length] ==0|| [eDate length] ==0  || [eDescr length]==0){
+    NSDate* date = [self dateFromString:eDate];
+    if([eName length] ==0 || [eLocation length] ==0|| [eDate length] ==0  || [eDescr length]==0 || !date){
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Missing Field"
-                                                                       message:@"All field are mandatory!"
+                                                                       message:@"All field are mandatory! Or possibly, check date format"
                                                                 preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
@@ -53,8 +54,7 @@
                                                  inManagedObjectContext:context];
     event.name = eName;
     event.desc = eDescr;
-    //Change
-    event.date = [NSDate date];
+    event.date = date;
     event.location = eLocation;
     NSError *error = nil;
     if(![[app managedObjectContext] save:&error]){
@@ -63,7 +63,18 @@
     }
     [self performSegueWithIdentifier:@"backFromEventCreateBySubmit" sender:self];
 }
-
+-(NSDate*) dateFromString:(NSString*) dateString{
+   // NSString *dateString = @"01-02-2010";
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    // this is imporant - we set our input date format to match our input string
+    // if format doesn't match you'll get nil from your string, so be careful
+    [dateFormatter setDateFormat:@"dd-MM-yyyy"];
+    NSDate *dateFromString = [[NSDate alloc] init];
+    // voila!
+    dateFromString = [dateFormatter dateFromString:dateString];
+    
+    return dateFromString;
+}
 
 
 @end
